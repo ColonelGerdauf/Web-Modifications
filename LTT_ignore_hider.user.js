@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LTT Ignored Post Hider
 // @namespace    https://github.com/ColonelGerdauf
-// @version      1.02
+// @version      1.03
 // @author       Colonel_Gerdauf
 // @description  Provides the option of hiding the posts made by members in your ignore list, replacing the short prompt, within the open threads. It also displays the original post of a thread, even if the author is ignored.
 // @match        *://linustechtips.com/main/topic/*
