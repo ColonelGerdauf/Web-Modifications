@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LTT Ignored Post Hider
 // @namespace    https://github.com/ColonelGerdauf
-// @version      1.05
+// @version      1.051
 // @author       Colonel_Gerdauf
 // @description  Provides the option of hiding the posts made by members in your ignore list, replacing the short prompt, within the open threads. It also displays the original post of a thread, even if the author is ignored.
 // @match        *://linustechtips.com/main/topic/*
@@ -10,6 +10,7 @@
 // @grant        GM_setValue
 // @updateURL    https://github.com/ColonelGerdauf/Web-Modifications/raw/master/LTT_ignore_hider.user.js
 // @downloadURL  https://github.com/ColonelGerdauf/Web-Modifications/raw/master/LTT_ignore_hider.user.js
+// @supportURL   https://github.com/ColonelGerdauf/Web-Modifications/issues
 // ==/UserScript==
 
 var $jq = jQuery.noConflict();
