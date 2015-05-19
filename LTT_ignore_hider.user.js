@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LTT Ignored Post Hider
 // @namespace    https://github.com/ColonelGerdauf
-// @version      1.04
+// @version      1.05
 // @author       Colonel_Gerdauf
 // @description  Provides the option of hiding the posts made by members in your ignore list, replacing the short prompt, within the open threads. It also displays the original post of a thread, even if the author is ignored.
 // @match        *://linustechtips.com/main/topic/*
@@ -16,11 +16,11 @@ var $jq = jQuery.noConflict();
 
 if ($jq('.main_width').children('.logged_in').length)
 {
-    var bin = GM_getValue('lgnore_switch', true);
+    var bin = GM_getValue('lgnore_switch', false);
 
-    $jq(".topic.hfeed.clear.clearfix > .maintitle")
-    .append($jq("<span>", {id:'lttn-ignore', style:'font-size: 13px; float: right;'})
-            .append($jq("<a>", {href:'#', style:'padding-left: 5px;', id:'lttn-ignore-data'})
+    $jq('.topic.hfeed.clear.clearfix > .maintitle')
+    .append($jq('<span>', {id:'lttn-ignore', style:'font-size: 13px; float: right;'})
+            .append($jq('<a>', {href:'javascript:;', class:'lttn-ignore-data', style:'padding-left: 5px;'})
                     .text(binaryFeedback(bin))));
 
     if ($jq('.post_block').first().find('a[itemprop="replyToUrl"]').text().trim() === "#1")
@@ -42,14 +42,13 @@ if ($jq('.main_width').children('.logged_in').length)
         });
     }
 
-    $jq('#lttn-ignore-data').click(function(event) {
-        event.preventDefault();
+    $jq('.lttn-ignore-data').click(function() {
         GM_setValue('lgnore_switch', !bin);
         location.reload();
     });
+}
 
-    function binaryFeedback($bin)
-    {
-        return bin ? "Show Ingored" : "Hide Ignored";
-    }
+function binaryFeedback($bin)
+{
+    return bin ? "Show Ingored" : "Hide Ignored";
 }
