@@ -1,0 +1,253 @@
+@-moz-document url-prefix("http://linustechtips.com/main") {
+/* Code written by: syntaxvgm */
+
+#content, .main_width {
+   max-width: 100%;
+}
+
+/* Code written by: Colonel_Gerdauf */
+
+#content {
+   background-color: #d8d8d8;
+}
+
+.desc.lighter , .desc.lighter.blend_links a {
+   color: #525252;	
+}
+
+.topic_buttons li.non_button a,.breadcrumb, .breadcrumb a, .desc, .desc.blend_links a, p.posted_info {
+   color: #2f2f2f;	
+}
+
+.pagination .pages a, .pagejump {
+   color: #505050;	
+}
+
+.pagination .back a, .pagination .forward a {
+   background-color: #c7c2c2;	
+}
+
+.paper-button.colored {
+   color: #2e73e6 !important;	
+}
+
+#ajax_loading {
+   display: none;	
+}
+
+#messenger_utilities {
+   max-width: 275px;
+}
+
+#messenger_content {
+   min-width: calc(99% - 275px);
+   max-width: 99%;
+}
+
+#messenger_content .post_block {
+   background-color: #fff;
+}
+
+.cfdsthumb {
+   background-color: #71990c;
+   border-color: #101010;
+}
+
+.cfds_category_row .ipsType_subtitle {
+   margin-top: 10px;
+}
+
+.gallery_image {
+   background-color: #efefef;
+}
+
+.gallery_item_info.ipsList_inline li {
+   filter: invert(6%);
+   -webkit-filter: invert(6%);
+}
+
+.post_block .ipsUserPhoto_large {
+   width: auto;
+   height: auto;
+   max-width: 120px;
+   max-height: 120px;
+}
+
+#status_wrapper .ipsUserPhoto_tiny {
+   width: 40px;
+   height: 40px;
+}
+
+.ipsList_withtinyphoto>li .list_content {
+   margin-left: 50px;
+}
+
+.ipsLikeBar_info {
+   background-color: #ebebeb;  
+}
+
+.ipsLikeButton.ipsLikeButton_enabled {
+   background-color: #648296;	
+   border-color: #638499;
+}
+
+.ipsLikeButton.ipsLikeButton_disabled {
+   background-color: #7f7f7f;
+   border-color: #8c8c8c;
+}
+
+.author_info .row2, .author_info .post_block.row2 {
+   background-color: transparent;
+}
+
+a.paper-button {
+   color: #000 !important;	
+}
+
+a:hover.paper-button {
+   text-shadow: 0 0 5px #000;
+}
+
+a.paper-button.colored {
+   color: #000 !important;	
+}
+
+a:hover.paper-button.colored {
+   color: #4285f4 !important;
+   text-shadow: 0 0 5px #4285f4;
+}
+
+a.paper-button.orange {
+   color: #000 !important;	
+}
+
+a:hover.paper-button.orange.edit_post, .post_edit.paper-button a:hover {
+   color: #db4105 !important;
+   text-shadow: 0 0 5px #db4105;
+}
+
+a.paper-button.colored.gild_button {
+   color: #000 !important;
+}
+
+a:hover.paper-button.colored.gild_button {
+   color: #9d7d2e !important;
+   text-shadow: 0 0 5px #9d7d2e;
+}
+
+.report a {
+   color: #f00 !important;	
+}
+
+.report a:hover {
+   background-color: rgba(256,0,0,0.48);	
+   text-shadow: none;
+}
+
+.post_del.paper-button a:hover {
+   color: #80f !important;
+   text-shadow: 0 0 5px #80f;	
+}
+
+a:hover.paper-button[data-post-button*="answer"] {
+   color: #0a0 !important;
+   text-shadow: 0 0 5px #0a0;
+}
+
+a:hover.paper-button.video-discuss {
+   color: #db4105 !important;
+   text-shadow: 0 0 5px #db4105;
+}
+
+a:hover.paper-button.raised {
+   color: #fff !important;
+   text-shadow: none;
+}
+
+.signature {
+   margin-left: 8px;
+}
+
+.post_body {
+   margin-left: 176px;
+	
+}
+
+.post_body .row2 {
+   height: 27px;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   border-bottom-color: #f5f5f5;
+}
+
+.post.entry-content  {
+   margin-top: 8px;
+   margin-left: 8px;
+   min-height: 100%;
+}
+
+.cm-post-date.left.desc.lighter.ipsType_small, .row2 p {
+   margin-left: 8px;
+}
+
+.post_body {
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-left-color: #f5f5f5;
+}
+
+#participants_list span.name a {
+   color: #1b20c2;
+}
+
+#participants_list .list_content {
+   margin-left: 52px;
+}
+
+#participants #participants_list span.name.left_convo a {
+   color: #a0a0a0;
+   text-decoration: line-through;
+}
+
+#participants #participants_list span.name.blocked  a {
+   color: #a0a0a0;
+}
+
+#participants_list .ipsUserPhoto_mini {
+   width: 42px;
+   height: 42px;
+}
+
+.ipsTooltip_inner {
+   background-color: #aaa;
+   border-color: #aaa;
+}
+ 
+#toggle_sidebar {
+   background-color: #aaa;
+}
+
+.ipsBadge_green {
+   background-color: #71990c;
+}
+  
+.ipsBadge_red {
+   background-color: #cc1f00;
+}
+
+.ipsBadge_purple {
+   background-color: #b3296f;
+}
+
+.ipsBadge_orange {
+   background-color: #e67717;
+}
+
+.ipsBadge_lightgrey {
+   background-color: #a5a5a5;
+}
+
+.ipsBadge_grey {
+   background-color: #5f5f5f;
+}
+}
