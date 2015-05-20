@@ -12,7 +12,9 @@ Go to my [Userstyles.org page](https://userstyles.org/users/287546), find the st
 Install The following extension, depending on the browser(s) you use:
 
 [Firefox - Greasemonkey](https://addons.mozilla.org/en-Us/firefox/addon/greasemonkey/ "Greasemonkey (Firefox)")
+
 [Chrome - Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en "Tampermonkey (Chrome)")
+
 [Opera - Tampermonkey (BETA)](https://addons.opera.com/en/extensions/details/tampermonkey-beta/?display=en "Tampermonkey (Opera)")
 
 Select the script that you are interested it, and click the "raw" button on the top right of the code box. A pop-up should appear if you want to install the script in the respective application.
