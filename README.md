@@ -7,7 +7,7 @@ Install the Stylish extension for your preferred browser(s): [Firefox](https://a
 
 Go to my [Userstyles.org page](https://userstyles.org/users/287546), find the style with the matching title (minus the underscores), and click "install style".
 
-## To install a userscript (user.js)
+## To install a userscript (user.js):
 
 Install The following extension, depending on the browser(s) you use:
 
