@@ -25,28 +25,23 @@ if ($jq('#user_navigation').hasClass('logged_in') || $jq('#branding-user > .ipsL
             .append($jq('<a>', {href:'javascript:;', class:'ips-ignore-data', style:'padding-left: 5px;'})
                     .text(binaryFeedback(bin))));
 
+    var ignoredPosts = $jq(".post_ignore").closest(".paper-card");
     if ($jq('.post_block').first().find('a[itemprop="replyToUrl"]').text().trim() === "#1")
-    {
-        if ($jq('.post_block').first().children(".post_ignore").length)
-        {
-            var pid = $jq('.post_block').first().attr('id').replace("post_id_","");
-            $jq('.post_ignore').first().replaceWith(["<!--ignore.firstpost:", pid, "-->"].join(''));
-            $jq('.post_wrap').first().css('display', '');
-            $jq('.post_wrap').first().css('overflow', 'visible');
-            $jq('a[itemprop="replyToUrl"]').first().text("Ignored Original Poster - #1");
-        }
+    { //If the first post is on this page, we want to make sure we don't hide it
+        ignoredPosts = $jq(".post_block:not(:eq(0)) .post_ignore").closest(".paper-card");
     }
 
     if (bin)
     {
-        $jq('.post_ignore').each(function(){
-            $jq(this).parent().parent().replaceWith("<!--ignore.enabled-->");
-        });
+        ignoredPosts.hide();
     }
 
     $jq('.ips-ignore-data').click(function(){
-        GM_setValue('lgnore_switch', !bin);
-        location.reload();
+        bin = !bin;
+        GM_setValue('lgnore_switch', bin);
+        if(bin) ignoredPosts.hide();
+        else ignoredPosts.show();
+        $jq(".ips-ignore-data").text(binaryFeedback(bin));
     });
 }
 else if ($jq('#user_navigation').hasClass('not_logged_in') || $jq('#branding-user').children('#nav-guest').length)
