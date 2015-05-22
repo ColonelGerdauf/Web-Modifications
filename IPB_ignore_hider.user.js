@@ -4,8 +4,8 @@
 // @version      1.10
 // @author       Colonel_Gerdauf
 // @description  Provides the option of hiding the posts made by members in your ignore list, replacing the short prompt, within the open threads. It also displays the original post of a thread, even if the author is ignored.
-// @match        http*://*/topic/*
-// @match        http*://*/*/topic/*
+// @match        *://*/topic/*
+// @match        *://*/*/topic/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // @grant        GM_getValue
 // @grant        GM_setValue
