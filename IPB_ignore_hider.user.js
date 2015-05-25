@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IPB Ignored Post Hider
 // @namespace    https://github.com/ColonelGerdauf
-// @version      1.13
+// @version      1.14
 // @author       Colonel_Gerdauf
 // @contributor  StormDrive
 // @description  Provides the option of hiding the posts made by members in your ignore list, replacing the short prompt, within the open threads. It also displays the original post of a thread, even if the author is ignored.
@@ -26,12 +26,15 @@ if ($jq('#user_navigation').hasClass('logged_in') || $jq('#branding-user > .ipsL
             .append($jq('<a>', {href:'javascript:void(0);', class:'ips-ignore-data', style:'padding-left: 5px;'})
                     .text(binaryFeedback(bin))));
     
-    if ($jq('.post_block').first().find('a[itemprop="replyToUrl"]').text().trim() === "#1")
-    { //If the first post is on this page, we want to make sure we don't hide it        
-        var firstPost = $jq('.post_block').first();        
-        firstPost.find('.post_ignore').replaceWith("<!--ignore.post.start-->");
-        firstPost.find('.post_wrap').removeAttr('style');
-        firstPost.find('a[itemprop="replyToUrl"]').text("Ignored Original Poster - #1");
+    var firstPost = $jq('.post_block').first(); 
+    
+    if (firstPost.find('a[itemprop="replyToUrl"]').text().trim() === "#1")
+    { //If the first post is on this page, we want to make sure we don't hide it
+        if (firstPost.children('.post_ignore').length) {
+            firstPost.find('.post_ignore').replaceWith("<!--ignore.post.start-->");
+            firstPost.find('.post_wrap').removeAttr('style');
+            firstPost.find('a[itemprop="replyToUrl"]').text("Ignored Original Poster - #1");
+        }
     }
     
     var ignoredPosts = $jq(".post_ignore").closest(".paper-card");
