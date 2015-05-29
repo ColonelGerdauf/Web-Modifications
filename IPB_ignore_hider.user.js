@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         IPB Ignored Post Hider
 // @namespace    https://github.com/ColonelGerdauf
-// @version      1.20
+// @version      1.2.0
 // @author       Colonel_Gerdauf
 // @contributor  StormDrive
 // @description  Provides the option of hiding the posts made by members in your ignore list, replacing the short prompt, within the open threads. It also displays the original post of a thread, even if the author is ignored.
