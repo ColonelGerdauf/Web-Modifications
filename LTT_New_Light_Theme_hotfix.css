@@ -11,6 +11,10 @@
    background-color: #d8d8d8;
 }
 
+#index_stats .paper-card {
+   margin-left: 10px !important;
+}
+
 .desc.lighter , .desc.lighter.blend_links a {
    color: #525252;	
 }
