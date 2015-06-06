@@ -15,10 +15,14 @@
    background-color: #080808;
 }
 
+#index_stats .paper-card {
+   margin-left: 10px !important;
+}
+
 #ajax_loading {
    display: none;	
 }
-    
+
 #board_statistics .name {
    color: #888;	
 }
@@ -63,7 +67,6 @@
 .gallery_item_info.ipsList_inline li {
    filter: invert(90%);
    -webkit-filter: invert(90%);
-
 }
 
 .post_block .ipsUserPhoto_large {
