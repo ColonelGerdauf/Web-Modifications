@@ -68,6 +68,9 @@
 .gallery_item_info.ipsList_inline li {
    filter: invert(6%);
    -webkit-filter: invert(6%);
+   -moz-filter: invert(6%);
+   -o-filter: invert(6%);
+   -ms-filter: invert(6%);
 }
 
 .post_block .ipsUserPhoto_large {
