@@ -67,6 +67,9 @@
 .gallery_item_info.ipsList_inline li {
    filter: invert(90%);
    -webkit-filter: invert(90%);
+   -moz-filter: invert(50%);
+   -o-filter: invert(50%);
+   -ms-filter: invert(50%);
 }
 
 .post_block .ipsUserPhoto_large {
@@ -100,8 +103,8 @@
 }
 
 .ipsLikeButton.ipsLikeButton_enabled {
-   background-color: #648296;	
    border-color: #627b8c;
+	color: #fff;
 }
 
 .ipsLikeButton.ipsLikeButton_disabled {
