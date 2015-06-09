@@ -91,7 +91,7 @@ ul#tabNav li a:hover {
 ul#tabNav li a.selected {
    color: #cfcfcf;
    background-color: #323232;
-	border-color: #111;
+   border-color: #111;
 }
 
 .gallery_image {
@@ -139,7 +139,7 @@ ul#tabNav li a.selected {
 
 .ipsLikeButton.ipsLikeButton_enabled {
    border-color: #627b8c;
-	color: #fff;
+   color: #fff;
 }
 
 .ipsLikeButton.ipsLikeButton_disabled {
