@@ -93,13 +93,20 @@
    background-color: #ebebeb;  
 }
 
+.ipsLikeButton {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
 .ipsLikeButton.ipsLikeButton_enabled {
    background-color: #648296;	
+   background-image: none;
    border-color: #638499;
 }
 
 .ipsLikeButton.ipsLikeButton_disabled {
    background-color: #7f7f7f;
+   background-image: none;
    border-color: #8c8c8c;
 }
 
@@ -177,6 +184,7 @@ a:hover.paper-button.raised {
 
 .post_body {
    margin-left: 176px;
+	
 }
 
 .post_body .row2 {
