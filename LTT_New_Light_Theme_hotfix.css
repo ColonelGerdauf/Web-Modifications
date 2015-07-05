@@ -48,7 +48,7 @@
    max-width: 99%;
 }
 
-#messenger_content .post_block {
+#messenger_content .post_block, .post_block.announcemen {
    background-color: #fff;
 }
 
@@ -184,7 +184,6 @@ a:hover.paper-button.raised {
 
 .post_body {
    margin-left: 176px;
-	
 }
 
 .post_body .row2 {
