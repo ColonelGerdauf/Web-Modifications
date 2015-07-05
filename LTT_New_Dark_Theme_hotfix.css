@@ -36,7 +36,7 @@
    max-width: 99%;
 }
 
-#messenger_content .post_block {
+#messenger_content .post_block, .post_block.announcement {
    background-color: #151515;
 }
 
@@ -118,7 +118,7 @@
    background-image: none;
    border-color: #737373;
 }
-    
+
 .post_ignore {
    background-color: rgba(0, 0, 0, 0.2);
 }
