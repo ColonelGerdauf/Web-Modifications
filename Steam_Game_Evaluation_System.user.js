@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Game Evaluation System
 // @namespace    https://github.com/ColonelGerdauf
-// @version      0.11
+// @version      0.12
 // @author       Colonel_Gerdauf
 // @description  
 // @match        *://store.steampowered.com/search/*
@@ -19,21 +19,23 @@ $jq('.search_result_row').each(function(){
     var $this = $jq(this);
     var color = [0,0,0]; // default is black
 
-    var reference = $this.find('.search_review_summary').attr('data-store-tooltip');
-    var score = parseInt(reference.substring(reference.indexOf("<br>")+4,reference.indexOf("%")));
-    var votes = parseInt(reference.substring(reference.indexOf("the")+4, reference.indexOf("user reviews")-1).replace(/\D/g,""));
-
-    /*var discount = 0;
-
-    if ($this.find('.search_discount').length > 0)
+    if ($this.find('.search_review_summary').length)
     {
-        reference = $this.find('.search_discount span').text();
-        discount = paresInt(reference.substring(reference.indexOf("-"),reference.indexOf("%")));
-    }*/
+        var reference = $this.find('.search_review_summary').attr('data-store-tooltip');
+        var score = parseInt(reference.substring(reference.indexOf("<br>")+4,reference.indexOf("%")));
+        var votes = parseInt(reference.substring(reference.indexOf("the")+4, reference.indexOf("user reviews")-1).replace(/\D/g,""));
+        /*
+        var discount = 0;
 
-    color = ratingDividend(score, votes);
-    $this.css('background-color', ['rgba(', color[0], ',', color[1], ',', color[2], ',0.2)'].join(''));
-
+        if ($this.find('.search_discount').length > 0)
+        {
+            reference = $this.find('.search_discount span').text();
+            discount = paresInt(reference.substring(reference.indexOf("-"),reference.indexOf("%")));
+        }*/
+        
+        color = ratingDividend(score, votes);
+        $this.css('background-color', ['rgba(', color[0], ',', color[1], ',', color[2], ',0.2)'].join(''));
+    }
 });
 
 function ratingDividend(sc, vt)
@@ -59,12 +61,18 @@ function ratingDividend(sc, vt)
          [0,153,255],   [0,138,255],   [0,122,255],   [0,107,255],   [0,92,255],    [0,76,255], 
          [0,61,255],    [0,46,255],    [0,31,255],    [0,15,255],    [0,0,255],     [128,0,255]]; 
 
+    // catch faulty values
+    if (sc < 0 || sc > 100)
+    {
+        return ratingArray[101];
+    }
+    
     // the score is first weighed based on preceived value
     var calc = ((Math.sqrt((sc * -1) + 100) * -1) + 10) * 10;
-    
+
     // now we add in the voting total
-//    var voteMedian = Math.pow(10,4);
-   // calc *= (-1/((vt+voteMedian)/voteMedian)+1):
+    //    var voteMedian = Math.pow(10,4);
+    // calc *= (-1/((vt+voteMedian)/voteMedian)+1):
 
     return ratingArray[Math.round(calc)];
 }
