@@ -123,14 +123,6 @@
    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.author_info {
-   position: sticky;
-   position: -webkit-sticky;
-   position: -moz-sticky;
-   position: -o-sticky;
-   position: -ms-sticky;
-}
-
 .author_info .row2, .author_info .post_block.row2 {
    background-color: transparent;
 }
