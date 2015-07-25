@@ -110,6 +110,14 @@
    border-color: #8c8c8c;
 }
 
+.author_info {
+   position: sticky;
+   position: -webkit-sticky;
+   position: -moz-sticky;
+   position: -o-sticky;
+   position: -ms-sticky;
+}
+
 .author_info .row2, .author_info .post_block.row2 {
    background-color: transparent;
 }
@@ -238,6 +246,14 @@ a:hover.paper-button.raised {
  
 #toggle_sidebar {
    background-color: #aaa;
+}
+
+.ipsButton_secondary span[style="color:red"] {
+   color: #a00000 !important;
+}
+
+.ipsButton_secondary span[style="color:green"] {
+   color: #00a000 !important;
 }
 
 .ipsBadge_green {
