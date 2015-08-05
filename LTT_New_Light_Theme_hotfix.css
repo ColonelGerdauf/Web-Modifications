@@ -1,7 +1,8 @@
 @-moz-document domain("linustechtips.com") {
 /* Code written by: syntaxvgm */
 
-#content, .main_width {
+#content,
+.main_width {
    max-width: 100%;
 }
 
@@ -15,19 +16,27 @@
    margin-left: 10px !important;
 }
 
-.desc.lighter , .desc.lighter.blend_links a {
+.desc.lighter,
+.desc.lighter.blend_links a {
    color: #525252;	
 }
 
-.topic_buttons li.non_button a,.breadcrumb, .breadcrumb a, .desc, .desc.blend_links a, p.posted_info {
+.topic_buttons li.non_button a,
+.breadcrumb,
+.breadcrumb a,
+.desc,
+.desc.blend_links a,
+p.posted_info {
    color: #2f2f2f;	
 }
 
-.pagination .pages a, .pagejump {
+.pagination .pages a,
+.pagejump {
    color: #505050;	
 }
 
-.pagination .back a, .pagination .forward a {
+.pagination .back a,
+.pagination .forward a {
    background-color: #c7c2c2;	
 }
 
@@ -48,7 +57,8 @@
    max-width: 99%;
 }
 
-#messenger_content .post_block, .post_block.announcemen {
+#messenger_content .post_block,
+.post_block.announcemen {
    background-color: #fff;
 }
 
@@ -110,32 +120,40 @@
    border-color: #8c8c8c;
 }
 
-.author_info .row2, .author_info .post_block.row2 {
+.author_info .row2,
+.author_info .post_block.row2 {
    background-color: transparent;
 }
 
-a.paper-button, input.paper-button {
+a.paper-button,
+input.paper-button {
    color: #000 !important;	
 }
 
-a:hover.paper-button, input:hover.paper-button {
+a:hover.paper-button,
+input:hover.paper-button {
    text-shadow: 0 0 5px #000;
 }
 
-a.paper-button.colored, input.paper-button.colored {
+a.paper-button.colored,
+input.paper-button.colored {
    color: #000 !important;	
 }
 
-a:hover.paper-button.colored, input:hover.paper-button.colored {
+a:hover.paper-button.colored,
+input:hover.paper-button.colored {
    color: #4285f4 !important;
    text-shadow: 0 0 5px #4285f4;
 }
 
-a.paper-button.orange, input.paper-button.orange {
+a.paper-button.orange,
+input.paper-button.orange {
    color: #000 !important;	
 }
 
-a:hover.paper-button.orange, input:hover.paper-button.orange, .post_edit.paper-button a:hover {
+a:hover.paper-button.orange,
+input:hover.paper-button.orange,
+.post_edit.paper-button a:hover {
    color: #db4105 !important;
    text-shadow: 0 0 5px #db4105;
 }
@@ -149,11 +167,13 @@ a:hover.paper-button.colored.gild_button {
    text-shadow: 0 0 5px #9d7d2e;
 }
 
-.report a, .report input {
+.report a,
+.report input {
    color: #f00 !important;	
 }
 
-.report a:hover, .report input:hover {
+.report a:hover,
+.report input:hover {
    background-color: rgba(256,0,0,0.48);	
    text-shadow: none;
 }
@@ -199,7 +219,8 @@ a:hover.paper-button.raised {
    min-height: 100%;
 }
 
-.cm-post-date.left.desc.lighter.ipsType_small, .row2 p {
+.cm-post-date.left.desc.lighter.ipsType_small,
+.row2 p {
    margin-left: 8px;
 }
 
