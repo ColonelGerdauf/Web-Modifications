@@ -90,6 +90,17 @@
    margin-left: 50px;
 }
 
+#more_apps_menucontent,
+.submenu_container {
+   background-color: #222;
+}
+
+#more_apps_menucontent li>a:hover,
+.submenu_container li>a:hover {
+   color: #fff;
+   background-color: #353535;
+}
+
 .message {
    color: #0e0e0e;
    background-color: #f5f1de; 
