@@ -21,8 +21,7 @@
    color: #525252;	
 }
 
-.topic_buttons li.non_button a,
-.breadcrumb,
+.topic_buttons li.non_button a,.breadcrumb,
 .breadcrumb a,
 .desc,
 .desc.blend_links a,
@@ -81,6 +80,10 @@ p.posted_info {
    -moz-filter: invert(6%);
    -o-filter: invert(6%);
    -ms-filter: invert(6%);
+}
+
+.post_block.solved {
+   background-color: rgba(0,255,128,0.2);
 }
 
 .post_block .ipsUserPhoto_large {
