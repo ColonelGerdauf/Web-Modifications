@@ -74,6 +74,10 @@
    -ms-filter: invert(90%);
 }
 
+.post_block.solved {
+   background-color: rgba(0,255,0,0.1);
+}
+
 .post_block .ipsUserPhoto_large {
    width: auto;
    height: auto;
