@@ -85,6 +85,22 @@
    max-height: 120px;
 }
 
+.desc, 
+.desc.blend_links a, 
+p.posted_info {
+   color: #e0e0e0;
+}
+
+
+.notify_icon {
+   filter: invert(75%);
+   -webkit-filter: invert(57%);
+   -moz-filter: invert(75%);
+   -o-filter: invert(75%);
+   -ms-filter: invert(75%);
+}
+
+
 #status_wrapper .ipsUserPhoto_tiny {
    width: 40px;
    height: 40px;
