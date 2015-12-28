@@ -12,7 +12,8 @@
    background-color: #d8d8d8;
 }
 
-#index_stats .paper-card {
+#index_stats .paper-card,
+#index_stats .ipsSideBlock {
    margin-left: 10px !important;
 }
 
@@ -84,6 +85,11 @@ p.posted_info {
 
 .post_block.solved {
    background-color: rgba(0,255,128,0.2);
+}
+
+.ipsUserPhoto {
+   background-color: rgba(255,255,255,0.109);
+	border: rgba(255,255,255,0.026);
 }
 
 .post_block .ipsUserPhoto_large {
@@ -207,6 +213,9 @@ a:hover.paper-button.raised {
 
 .post_body {
    margin-left: 176px;
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-left-color: #f5f5f5;
 }
 
 .post_body .row2 {
@@ -225,12 +234,6 @@ a:hover.paper-button.raised {
 .cm-post-date.left.desc.lighter.ipsType_small,
 .row2 p {
    margin-left: 8px;
-}
-
-.post_body {
-   border-left-style: solid;
-   border-left-width: 1px;
-   border-left-color: #f5f5f5;
 }
 
 #participants_list span.name a {
