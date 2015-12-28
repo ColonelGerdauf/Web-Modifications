@@ -16,7 +16,8 @@
    background-color: #080808;
 }
 
-#index_stats .paper-card {
+#index_stats .paper-card,
+#index_stats .ipsSideBlock {
    margin-left: 10px !important;
 }
 
@@ -78,6 +79,11 @@
    background-color: rgba(0,255,0,0.1);
 }
 
+.ipsUserPhoto {
+   background-color: rgba(255,255,255,0.109);
+	border: rgba(255,255,255,0.026);
+}
+
 .post_block .ipsUserPhoto_large {
    width: auto;
    height: auto;
@@ -90,7 +96,6 @@
 p.posted_info {
    color: #e0e0e0;
 }
-
 
 .notify_icon {
    filter: invert(75%);
@@ -240,13 +245,16 @@ a:hover.paper-button.raised {
 
 .post_body {
    margin-left: 176px;
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-left-color: rgba(255,255,255,0.08);
 }
 
 .post_body .row2 {
    height: 27px;
    border-bottom-style: solid;
    border-bottom-width: 1px;
-   border-bottom-color: #1f1f1f;
+   border-bottom-color: rgba(255,255,255,0.08);
 }
 
 .post.entry-content  {
@@ -258,12 +266,6 @@ a:hover.paper-button.raised {
 .cm-post-date.left.desc.lighter.ipsType_small,
 .row2 p {
    margin-left: 8px;
-}
-
-.post_body {
-   border-left-style: solid;
-   border-left-width: 1px;
-   border-left-color: #1f1f1f;
 }
 
 #participants_list .list_content {
@@ -295,6 +297,9 @@ a:hover.paper-button.raised {
 .ipsButton_secondary span[style="color:green"] {
    color: #00a820 !important;
 }
+
+
+/* properties with defined colours */
 
 .ipsBadge_green {
    background-color: #71990c;
