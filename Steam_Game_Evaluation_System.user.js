@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Steam Game Evaluation System
+// @name         Steam Game Evaluation System (BETA)
 // @namespace    https://github.com/ColonelGerdauf
-// @version      0.12
+// @version      0.13
 // @author       Colonel_Gerdauf
 // @description  
 // @match        *://store.steampowered.com/search/*
@@ -68,7 +68,7 @@ function ratingDividend(sc, vt)
     }
     
     // the score is first weighed based on preceived value
-    var calc = ((Math.sqrt((sc * -1) + 100) * -1) + 10) * 10;
+    var calc = 10 * (10 - (Math.sqrt(100 - sc));
 
     // now we add in the voting total
     //    var voteMedian = Math.pow(10,4);
