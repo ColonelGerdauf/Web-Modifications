@@ -1,0 +1,147 @@
+/*---
+Name: Dark Malachite Theme
+For: ProtonMail
+By: Colonel_Gerdauf
+---*/
+
+
+/* Basic formatting and Main Menus */
+.headerDesktop-logo {
+  background-color: #082e29;
+}
+.search-form-fieldset {
+  background: #080808;
+}
+.headerSecured-container {
+  background-color: #085e53;
+}
+.navigation li:hover {
+  border-color: rgba(255,255,0,0.75);
+  background-color: rgba(240,255,255,0.1);
+}
+.navigation li.active {
+  border-color: rgba(255,0,128,0.75);
+  background-color: rgba(240,255,0,0.225);
+}
+.navigation li.active:hover {
+  background-color: rgba(240,255,255,0.3);
+}
+.navigation li.active:hover a {
+  pointer-events: none;
+}
+.sidebar {
+  background-color: #083f38;
+}
+.sidebarApp-item.active .sidebarApp-link {
+  border-left-width: 4px;
+  border-left-color: rgba(255,0,128,0.75); 
+  background-color: rgba(240,255,0,0.25);
+}
+.sidebarApp-item.active:hover .sidebarApp-link {
+  background-color: rgba(240,255,0,0.4);
+  pointer-events: none;
+}
+.sidebarApp-item:hover:not(.active) .sidebarApp-link {
+  background-color: rgba(240,255,255,0.1);
+}
+#pm_main {
+  color: #f0f0f0;
+  background-color: #1f1f1f;
+}
+
+
+/* Alerts and Notifications */
+.alert {
+  border-radius: 8px;
+}
+.alert.alert-info {
+  color: #f6e7f2;
+  background-color: #404480;
+}
+.alert.alert-info a {
+  color: #f0f000;
+}
+.alert.alert-warning {
+  color: #f2e6e6;
+  background-color: #7f0000;
+}
+.alert.alert-warning a {
+  color: #00f0f0;
+}
+
+
+/* Buttons */
+.pm_button, .pm_button:focus, .pm_button:active {
+  color: #f0f0f0;
+  background-color: #3f3f3f;
+  border-color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+.pm_button.primary, .pm_button.primary:focus, .pm_button.primary:active {
+  color: #f0f0f0;
+  background-color: #7f3fff;
+  border-color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+.pm_button:hover {
+  color: #040404;
+  background-color: #d0d0d0;
+}
+.pm_button.primary:hover {
+  color: #805600;
+  background-color: #d4bfff;
+  border-color: #ccc;
+}
+.pm_button.link {
+  color: #d0d0f0;
+  background-color: #3f3f3f;
+}
+.pm_button.link:hover {
+  color: #040408;
+  background-color: #d0d0d0;
+}
+
+
+/* Forms */
+.pm_form .pm_select {  
+  background-color: #1f1f1f;
+  box-shadow: rgba(255,255,255,0.45) 0 0 5px inset;
+  border-radius: 2px;
+}
+.pm_form select, .pm_form select:focus {
+  color: #f0f0f0;
+}
+.pm_form select option {
+  color: #fff;
+  background-color: #000;
+}
+
+
+
+/* Toggle Switches */
+.pm_toggle {
+  color: rgba(95,95,95,0.25);
+  background-color: #3f3f3f;
+  box-shadow: #fefefe 0 0 1.2px inset;
+}
+.pm_toggle:hover { 
+  color: rgba(95,95,95,0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.pm_toggle span.knob {
+  background-color: #684068;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-color: transparent;
+}
+.pm_toggle.on .on {
+  color: #fff0d7;
+  background-color: #0080d0;
+  box-shadow: #6cafd9 0 0 4px inset;
+}
+.pm_toggle.off .off {
+  color: #d7ffff;
+  background-color: #800000;
+  box-shadow: #d96c6c 0 0 4px inset;
+}
