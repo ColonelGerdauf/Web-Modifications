@@ -53,6 +53,11 @@ By: Colonel_Gerdauf
 /* Alerts and Notifications */
 .alert {
   border-radius: 8px;
+  color: #f0f0f0;
+  background-color: #404040;
+}
+.alert a{
+  color: #0040f0;
 }
 .alert.alert-info {
   color: #f6e7f2;
