@@ -48,6 +48,10 @@ By: Colonel_Gerdauf
   color: #f0f0f0;
   background-color: #1f1f1f;
 }
+.pm_modal .modal-content {
+  color: #f0f0f0;
+  background-color: #1f1f1f;
+}
 
 
 /* Alerts and Notifications */
@@ -138,6 +142,28 @@ By: Colonel_Gerdauf
 .settingsDashboard-plans {
   background-color: #282828;
 }
+.settingsDashboard-plans .planPrice {
+  color: #5c995c;
+}
+.totalRows-2-years-price, .totalRows-monthly-price, .totalRows-yearly-price, .settingsDashboard-plans .freeColumn-free {
+  color: #93cda2;  
+}
+.settingsDashboard-plans [class*="Column-container"] .isCurrent {
+  background-color: #7a80cc;
+  border-color: #7a80cc;
+  box-shadow: 0 0 8px #7a80cc,0 0 0 2px #7a80cc;
+}
+.settingsDashboard-plans.free-active .freeColumn-container,
+.settingsDashboard-plans.plus-active .plusColumn-container,
+.settingsDashboard-plans.professional-active .professionalColumn-container,
+.settingsDashboard-plans.visionary-active .visionaryColumn-container{
+  box-shadow: 0 0 8px #7a80cc,0 0 0 2px #7a80cc;
+}
+
+.settingsDashboard-plans .disabled{
+ color: #c00000; 
+}
+
 
 /* Toggle Switches */
 .pm_toggle {
