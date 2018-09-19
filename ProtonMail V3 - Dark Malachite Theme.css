@@ -48,9 +48,13 @@ By: Colonel_Gerdauf
   color: #f0f0f0;
   background-color: #1f1f1f;
 }
-.pm_modal .modal-content {
-  color: #f0f0f0;
+.pm_modal .modal-dialog, .pm_modal .modal-dialog .modal-content, .pm_modal .modal-dialog .modal-footer {
+  color: #f0f0f0 ;
   background-color: #1f1f1f;
+  border-color: #7a80cc;
+}
+.pm_modal .modal-dialog .close {
+  background-color: #7a80cc;
 }
 
 
@@ -110,15 +114,31 @@ By: Colonel_Gerdauf
   background-color: #d0d0d0;
 }
 .currencySelector-container .currencySelector-button.active {
-   color: #401000;
-   background-color: #00d040;
-   border-radius: 0px;
+  color: #401000;
+  background-color: #00d040;
+  border-radius: 0px;
 }
 .currencySelector-container .currencySelector-button:active {
-   background-color: #209740;
-   border-radius: 0px;
+  background-color: #209740;
+  border-radius: 0px;
 }
-
+div.noUi-target {
+  background-color: #404040; 
+}
+div.noUi-handle {
+  background-color: #60c060;
+  border-color: #80d080;
+}
+div.noUi-connect {
+  background-color: #404080; 
+}
+div.noUi-horizontal div.noUi-tooltip {
+  color: #f0ffff;
+  background-color: rgba(64,48,48,0.9);
+  border-color: rgba(64,48,48,0.9);
+  box-shadow: 0 0 2px 3px rgba(128,255,0,0.5);
+  font-weight: bold;
+}
 
 /* Forms */
 .pm_form .pm_select , .settingsDashboard-plans [class*="Column-container"] [class*="addonRow"] .pm_select {  
@@ -156,7 +176,7 @@ By: Colonel_Gerdauf
 .settingsDashboard-plans.free-active .freeColumn-container,
 .settingsDashboard-plans.plus-active .plusColumn-container,
 .settingsDashboard-plans.professional-active .professionalColumn-container,
-.settingsDashboard-plans.visionary-active .visionaryColumn-container{
+.settingsDashboard-plans.visionary-active .visionaryColumn-container {
   box-shadow: 0 0 8px #7a80cc,0 0 0 2px #7a80cc;
 }
 
