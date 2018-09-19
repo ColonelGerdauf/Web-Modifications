@@ -78,7 +78,7 @@ By: Colonel_Gerdauf
 /* Buttons */
 .pm_button, .pm_button:focus, .pm_button:active {
   color: #f0f0f0;
-  background-color: #3f3f3f;
+  background-color: #3f3f3f ;
   border-color: rgba(255,255,255,0.4);
   border-radius: 4px;
 }
@@ -105,6 +105,15 @@ By: Colonel_Gerdauf
   color: #040408;
   background-color: #d0d0d0;
 }
+.currencySelector-container .currencySelector-button.active {
+   color: #401000;
+   background-color: #00d040;
+   border-radius: 0px;
+}
+.currencySelector-container .currencySelector-button:active {
+   background-color: #209740;
+   border-radius: 0px;
+}
 
 
 /* Forms */
@@ -122,6 +131,13 @@ By: Colonel_Gerdauf
 }
 
 
+/* Tables */
+.settingsDashboard-overview-section-table-container .overviewSection-container .overviewSection-tbody-billing {
+  background-color: #101010; 
+}
+.settingsDashboard-plans {
+  background-color: #282828;
+}
 
 /* Toggle Switches */
 .pm_toggle {
