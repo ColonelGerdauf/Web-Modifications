@@ -117,7 +117,7 @@ By: Colonel_Gerdauf
 
 
 /* Forms */
-.pm_form .pm_select , select.addonRow-select {  
+.pm_form .pm_select , .settingsDashboard-plans [class*="Column-container"] [class*="addonRow"] .pm_select {  
   background-color: #1f1f1f;
   box-shadow: rgba(255,255,255,0.45) 0 0 5px inset;
   border-radius: 2px;
