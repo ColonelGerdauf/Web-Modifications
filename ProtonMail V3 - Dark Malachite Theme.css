@@ -6,6 +6,14 @@ By: Colonel_Gerdauf
 
 
 /* Basic formatting and Main Menus */
+#pm_main {
+  color: #f0f0f0;
+  background-color: #1f1f1f;
+}
+body {
+  font-family: Tahoma, Geneva, sans-serif; 
+  font-size: 14px;
+}
 .headerDesktop-logo {
   background-color: #082e29;
 }
@@ -43,10 +51,6 @@ By: Colonel_Gerdauf
 }
 .sidebarApp-item:hover:not(.active) .sidebarApp-link {
   background-color: rgba(240,255,255,0.1);
-}
-#pm_main {
-  color: #f0f0f0;
-  background-color: #1f1f1f;
 }
 .pm_modal .modal-dialog, .pm_modal .modal-dialog .modal-content, .pm_modal .modal-dialog .modal-footer {
   color: #f0f0f0 ;
@@ -169,12 +173,16 @@ div.noUi-horizontal div.noUi-tooltip {
 
 /* Forms */
 .pm_form .pm_select, .settingsDashboard-plans [class*="Column-container"] [class*="addonRow"] .pm_select {  
-  background-color: #1f1f1f;
+  background-color: #2f2f2f;
   box-shadow: rgba(255,255,255,0.45) 0 0 5px inset;
   border-radius: 2px;
 }
+.pm_form .pm_select .fa {
+  color: #c0c0c0;
+}
 .pm_form select, .pm_form select:focus {
   color: #f0f0f0;
+  background-color: #3f3f3f;
 }
 .pm_form select option {
   color: #fff;
