@@ -10,7 +10,7 @@ By: Colonel_Gerdauf
   background-color: #082e29;
 }
 .search-form-fieldset {
-  background: #080808;
+  background: rgba(8,8,8,0.8);
 }
 .headerSecured-container {
   background-color: #085e53;
@@ -241,4 +241,28 @@ div.noUi-horizontal div.noUi-tooltip {
   color: #d7ffff;
   background-color: #800000;
   box-shadow: #d96c6c 0 0 4px inset;
+}
+
+/* textboxes */
+.pm_form input[type="email"],
+.pm_form input[type="number"],
+.pm_form input[type="password"],
+.pm_form input[type="search"],
+.pm_form input[type="tel"],
+.pm_form input[type="text"],
+.pm_form input[type="url"],
+.pm_form textarea {
+  color: #a0a0a0;
+  background-color: #101010;
+}
+.pm_form input[type="email"]:focus,
+.pm_form input[type="number"]:focus,
+.pm_form input[type="password"]:focus,
+.pm_form input[type="search"]:focus,
+.pm_form input[type="tel"]:focus,
+.pm_form input[type="text"]:focus,
+.pm_form input[type="url"]:focus,
+.pm_form textarea:focus {
+  color: #c0c0c0;
+  background-color: #080808;
 }
