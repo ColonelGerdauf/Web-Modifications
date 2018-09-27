@@ -96,6 +96,12 @@ By: Colonel_Gerdauf
   border-color: rgba(255,255,255,0.4);
   border-radius: 4px;
 }
+.pm_button.white, .pm_button.white:focus, .pm_button.white:active {
+  color: #f0f0f0;
+  background-color: #1f1f1f;
+  border-color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
 .pm_button:hover {
   color: #040404;
   background-color: #d0d0d0;
@@ -140,8 +146,29 @@ div.noUi-horizontal div.noUi-tooltip {
   font-weight: bold;
 }
 
+
+/* badges and context items */
+.pm_badge.default {
+  color: #c0c0c0;
+  background-color: #282828;
+}
+
+
+/* checkboxes */
+.customCheckbox-input + .customCheckbox-mask {
+  background-color: #0f0f0f;
+}
+.customCheckbox-input:not(:checked) + .customCheckbox-mask {
+  background-image: none;
+}
+.customCheckbox-input:checked + .customCheckbox-mask {
+  background-color: #676ecd;
+  border-color: #8288d9;
+}
+
+
 /* Forms */
-.pm_form .pm_select , .settingsDashboard-plans [class*="Column-container"] [class*="addonRow"] .pm_select {  
+.pm_form .pm_select, .settingsDashboard-plans [class*="Column-container"] [class*="addonRow"] .pm_select {  
   background-color: #1f1f1f;
   box-shadow: rgba(255,255,255,0.45) 0 0 5px inset;
   border-radius: 2px;
@@ -152,6 +179,9 @@ div.noUi-horizontal div.noUi-tooltip {
 .pm_form select option {
   color: #fff;
   background-color: #000;
+}
+.alert .pm_select,.alert input[type=email],.alert input[type=number],.alert input[type=password],.alert input[type=search],.alert input[type=text],.alert textarea {
+ background:#1f1f1f!important
 }
 
 
