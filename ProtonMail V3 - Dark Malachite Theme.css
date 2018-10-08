@@ -53,7 +53,7 @@ body {
   background-color: rgba(240,255,255,0.1);
 }
 .pm_modal .modal-dialog, .pm_modal .modal-dialog .modal-content, .pm_modal .modal-dialog .modal-footer {
-  color: #f0f0f0 ;
+  color: inherit;
   background-color: #1f1f1f;
   border-color: #7a80cc;
 }
@@ -61,11 +61,56 @@ body {
   background-color: #7a80cc;
 }
 
+/* emails */
+
+.conversation {
+  background-color: #404040; 
+}
+.conversation.read {
+  background-color: #101010; 
+}
+.conversation.active {
+  background-color: #282828;
+  color: #ffff80;  
+}
+.conversation .row h4 {
+  color: inherit;
+}
+#conversation-view header h1 {
+  color: inherit;
+}
+#conversation-view .message .summary,
+#conversation-view .message .summary .summary-right,
+#conversation-view .message .details,
+.eventsAttachments-summary,
+#attachmentArea,
+#conversation-view .message .summary .labels,
+#conversation-view .message .summary .location.folders,
+#conversation-view .message .summary .message-attachments,
+#conversation-view .message .summary .status, 
+#conversation-view .message .summary .time{
+  background-color: #404040;
+}
+
+#conversation-view .message .summary .meta .contact span,
+#conversation-view .message .details .recipients-summary strong {
+  color: #d0d0d0;  
+}
+#conversation-view .message .summary .encryptionStatus .fa {
+  color: #a0a0a0;  
+}
+#conversation-view .frame,
+.eventsAttachments-details-wrapper {
+  background-color: #303030;
+}
+.eventsAttachments-details-wrapper {
+  border-color: #404040;
+}
 
 /* Alerts and Notifications */
 .alert {
   border-radius: 8px;
-  color: #f0f0f0;
+  color: inherit;
   background-color: #404040;
 }
 .alert a{
@@ -89,19 +134,19 @@ body {
 
 /* Buttons */
 .pm_button, .pm_button:focus, .pm_button:active {
-  color: #f0f0f0;
+  color: inherit;
   background-color: #3f3f3f ;
   border-color: rgba(255,255,255,0.4);
   border-radius: 4px;
 }
 .pm_button.primary, .pm_button.primary:focus, .pm_button.primary:active {
-  color: #f0f0f0;
+  color: inherit;
   background-color: #7f3fff;
   border-color: rgba(255,255,255,0.4);
   border-radius: 4px;
 }
 .pm_button.white, .pm_button.white:focus, .pm_button.white:active {
-  color: #f0f0f0;
+  color: inherit;
   background-color: #1f1f1f;
   border-color: rgba(255,255,255,0.4);
   border-radius: 4px;
@@ -185,7 +230,7 @@ div.noUi-horizontal div.noUi-tooltip {
   background-color: #3f3f3f;
 }
 .pm_form select option {
-  color: #fff;
+  color: inherit;
   background-color: #000;
 }
 .alert .pm_select,.alert input[type=email],.alert input[type=number],.alert input[type=password],.alert input[type=search],.alert input[type=text],.alert textarea {
